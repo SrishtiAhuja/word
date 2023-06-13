@@ -1,0 +1,88 @@
+/* Simple selector */
+body{background-color:beige;}
+
+
+/* Combinator selector */
+div h3{
+    text-decoration: underline;
+}
+div>h2{
+    text-decoration: underline;
+}
+h3+p{
+    text-align: center;
+}
+h2+p{
+    text-align: center;
+}
+div~div{
+    border:1px dashed black;
+}
+section div{
+    width:500px;
+}
+/* Contextual selector */
+
+/* Grouped selector */
+#one,#two{
+    border:1px dashed black;
+}
+/* Class selector */
+.example-row{
+    color:olivedrab;
+}
+/* ID selector */
+#random{
+    color:saddlebrown;
+}
+/* Pseudo-Class selector */
+a:hover{
+    background-color: black;
+    color:white;
+}
+a:active{
+    background-color: white;
+    color:black;
+}
+/* Structural Pseudo-Class selector */
+ol li:first-child{
+    color:red;
+}
+ol li:nth-child(3)
+{
+    color: aqua;
+}
+/* Pseudo-Element selector */
+.lg-one::before{
+    content:"hi there!";
+    color:black;
+}
+.lg-two::after{
+    content:"so silly!!!!";
+    color:black;
+}
+
+p::first-letter{
+    font-size: 40px;
+    color:black;
+}
+p::first-line{
+    word-spacing: 15px;
+}
+/* Attribute selector */
+h3[title="div-header"]
+{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+a[href^="in"]
+{
+    color:hotpink;
+}
+h2[id$="ne"]
+{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
